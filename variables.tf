@@ -836,3 +836,8 @@ variable "zone" {
   default     = null
   description = "(Optional) The Availability Zone which the Virtual Machine should be allocated in, only one zone would be accepted. If set then this module won't create `azurerm_availability_set` resource. Changing this forces a new resource to be created."
 }
+
+variable "ignore_custom_data_changes" {
+  type    = bool
+  default = false
+}
